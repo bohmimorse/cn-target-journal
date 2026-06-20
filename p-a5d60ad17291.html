@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>华体会资料笔记：综合门户的访问与域名核对说明</title>
+<meta name="description" content="一份关于华体会作为综合门户的整理笔记，说明如何访问、为什么要核对域名，并附常见问题与资料说明。">
+<style>
+:root{
+  --paper:#fdfaf4;
+  --paper-2:#f6efe2;
+  --ink:#3a342b;
+  --ink-soft:#6b6255;
+  --gold:#b08a४6;
+  --gold:#b08a46;
+  --line:#e4d8c2;
+  --card:#fffdf8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;
+  line-height:1.75;
+  font-size:16px;
+}
+.wrap{max-width:860px;margin:0 auto;padding:28px 18px 60px}
+header.note-head{
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:linear-gradient(180deg,var(--card),var(--paper-2));
+  padding:26px 24px;
+  position:relative;
+}
+header.note-head .tag{
+  display:inline-block;
+  font-size:13px;
+  color:var(--gold);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:3px 12px;
+  background:var(--paper);
+  letter-spacing:.5px;
+}
+h1{
+  font-size:26px;
+  margin:14px 0 8px;
+  line-height:1.4;
+}
+.lead{
+  color:var(--ink-soft);
+  margin:6px 0 0;
+}
+.meta-line{
+  margin-top:16px;
+  font-size:13px;
+  color:var(--ink-soft);
+  border-top:1px dashed var(--line);
+  padding-top:12px;
+}
+section{margin-top:30px}
+h2{
+  font-size:20px;
+  margin:0 0 12px;
+  padding-left:12px;
+  border-left:4px solid var(--gold);
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:18px 20px;
+}
+.cols{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.cols .card h3{margin:0 0 6px;font-size:16px;color:var(--gold)}
+.cols .card p{margin:0;font-size:15px;color:var(--ink-soft)}
+ol.steps{
+  margin:0;
+  padding-left:0;
+  list-style:none;
+  counter-reset:step;
+}
+ol.steps li{
+  counter-increment:step;
+  position:relative;
+  padding:10px 0 10px 42px;
+  border-bottom:1px dashed var(--line);
+}
+ol.steps li:last-child{border-bottom:none}
+ol.steps li::before{
+  content:counter(step);
+  position:absolute;
+  left:0;top:10px;
+  width:26px;height:26px;
+  background:var(--paper-2);
+  color:var(--gold);
+  border:1px solid var(--line);
+  border-radius:50%;
+  text-align:center;
+  line-height:26px;
+  font-size:14px;
+  font-weight:700;
+}
+.tip{
+  background:var(--paper-2);
+  border-left:4px solid var(--gold);
+  border-radius:0 10px 10px 0;
+  padding:14px 16px;
+  font-size:15px;
+  color:var(--ink-soft);
+}
+.faq dt{
+  font-weight:700;
+  margin-top:14px;
+}
+.faq dd{
+  margin:6px 0 0;
+  color:var(--ink-soft);
+}
+a{color:#946d28;text-decoration:underline;text-underline-offset:3px}
+a:hover{color:var(--gold)}
+.urlbox{
+  display:inline-block;
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:4px 10px;
+  font-family:Consolas,monospace;
+  font-size:14px;
+  word-break:break-all;
+}
+footer{
+  margin-top:36px;
+  font-size:13px;
+  color:var(--ink-soft);
+  border-top:1px solid var(--line);
+  padding-top:16px;
+}
+@media(max-width:640px){
+  .cols{grid-template-columns:1fr}
+  h1{font-size:22px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="note-head">
+  <span class="tag">资料笔记 · 编号 1808</span>
+  <h1>华体会资料笔记：综合门户怎么看、怎么访问</h1>
+  <p class="lead">这是一份按帮助中心思路整理的资料卡，把搜索 华体会 时常见的几个问题归到一起：它大概是什么、入口怎么找、为什么要先核对域名，以及一些容易混淆的细节。</p>
+  <div class="meta-line">整理性质：个人手工归纳 · 不构成任何官方说明 · 内容以公开可查信息为参考</div>
+</header>
+
+<section>
+  <h2>一、基础介绍</h2>
+  <div class="card">
+    <p><a href="https://cn-target-hth.com.cn">华体会</a> 在不少使用者的印象里更偏向一个综合门户的角色，也就是把信息浏览、栏目导航、内容检索这类需求集中到一个入口。综合门户的特点是分区清晰、内容更新较勤，用户通常不是为单一功能而来，而是把它当作一个常用的起点页。</p>
+    <p style="margin-bottom:0">这份笔记不评价内容质量，也不替任何一方背书，只是把"我访问前会想确认什么"这件事写清楚，方便后来的人少走弯路。</p>
+  </div>
+</section>
+
+<section>
+  <h2>二、如何访问</h2>
+  <ol class="steps card">
+    <li>在浏览器地址栏直接手动输入完整网址，而不是在搜索框里随便点结果，这样能减少进错站点的概率。</li>
+    <li>确认地址栏显示的是 <span class="urlbox">cn-target-hth.com.cn</span>，逐字对照拼写，留意有没有多出或少掉的字母。</li>
+    <li>访问完整地址：<a href="https://cn-target-hth.com.cn">https://cn-target-hth.com.cn</a>，检查是否为 https 开头。</li>
+    <li>如果页面排版、栏目和你印象中的差别很大，先停下来核对，不要急着输入任何个人信息。</li>
+  </ol>
+</section>
+
+<section>
+  <h2>三、为什么要核对域名</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>名称相近</h3>
+      <p>综合门户类站点常被模仿，相似拼写的域名很多，肉眼快速扫一眼容易看错，逐字核对更稳妥。</p>
+    </div>
+    <div class="card">
+      <h3>入口分散</h3>
+      <p>同一个品牌词在搜索结果里可能对应多个页面，把准确域名记下来，比每次重新搜索更可靠。</p>
+    </div>
+    <div class="card">
+      <h3>习惯收藏</h3>
+      <p>确认无误后加入书签，下次直接打开，避免每次都在结果列表里重新判断。</p>
+    </div>
+    <div class="card">
+      <h3>保护信息</h3>
+      <p>地址不对时不要填写任何资料。先核对再操作，是浏览任何站点都通用的小习惯。</p>
+    </div>
+  </div>
+  <p class="tip" style="margin-top:16px">小结：核对域名不是麻烦，而是把判断成本前置。把 cn-target-hth.com.cn 这串字符记牢，比记一个模糊印象更管用。</p>
+</section>
+
+<section>
+  <h2>四、常见问题</h2>
+  <dl class="faq card">
+    <dt>华体会 主要是做什么的？</dt>
+    <dd>从综合门户的角度看，它更像一个信息聚合与栏目浏览的起点，具体内容以实际页面为准，本笔记不做功能罗列。</dd>
+
+    <dt>怎么确认我打开的是对的页面？</dt>
+    <dd>对照地址栏是否完整显示 cn-target-hth.com.cn，并确认是 https 开头。拼写有出入就先暂停。</dd>
+
+    <dt>这份笔记是官方发布的吗？</dt>
+    <dd>不是。它是个人整理的资料卡，目的是把访问与核对的注意事项讲清楚，不代表任何官方立场。</dd>
+
+    <dt>内容会更新吗？</dt>
+    <dd>会按需要做小幅修订。若你发现信息已经过时，以你访问时的实际页面为准。</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>五、资料说明</h2>
+  <div class="card">
+    <p>本页面属于参考性质的整理笔记，写法贴近帮助中心的问答风格，方便快速查阅。涉及的链接均指向同一地址：可以查看 <a href="https://cn-target-hth.com.cn">华体会 的相关说明</a>，也可作为综合门户 资料参考。</p>
+    <p style="margin-bottom:0">如对内容有疑问，建议以实际访问到的页面信息为准，不要仅凭本笔记做判断。</p>
+  </div>
+</section>
+
+<footer>
+  <p>最后整理时间：2025年 · 资料编号 1808。本页为手工归纳的非官方笔记，仅供浏览参考，不含认证或承诺性表述。</p>
+</footer>
+
+</div>
+</body>
+</html>

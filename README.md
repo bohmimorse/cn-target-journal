@@ -1,2 +1,14 @@
 # cn-target-journal
-HTML page archive and documentation
+
+静态页面记录中心
+
+这里保存静态 HTML 文件，便于后续查找、访问和核对。
+
+## 文件组织
+
+- 根目录承载页面文件
+- README 记录仓库用途与状态
+
+## 更新记录
+
+仓库会根据发布流程持续更新，内容以实际提交为准。
